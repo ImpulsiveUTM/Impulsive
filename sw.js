@@ -10,26 +10,22 @@ self.addEventListener('install', evento=>{
     const promesa =caches.open(CACHE)
         .then(cache=>{
             return cache.addAll([
-                '/',
-                '/index.html',
+                // '/',
+                'index.html',
                 'css/bootstrap.css',
                 'css/bootstrap.css.map',
                 'css/personal.css',
                 'css/icons.css',
                 'js/bootstrap.min.js',
                 'js/app.js',
-                '/offline.html',
+                'offline.html',
                 'font-awesome/css/font-awesome.min.css',
                 'img/phone.jpg.png',
-                '/contacto.html',
+                'contacto.html',
                 'img/gs.png',
                 'img/ImpvlsiveLogo.png',
                 'img/marketing.png',
                 'img/restaurante.jpg',
-                '/icon-192x192.png',
-                '/icon-256x256.png',
-                '/icon-384x384.png',
-                '/icon-512x512.png',
                                 
             ]);
         });
